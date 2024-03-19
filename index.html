@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body >
+    <h1 style="text-align: center;">Password keeper</h1>
+   
+    <div style="text-align: center;">
+        <h4 id="count"></h4>
+        <label for="search">Search</label>
+        <input type="search" name="search" id="search" oninput="searchPassword(this.value)" />
+    </div>
+
+    <form onsubmit="handleFormSubmit(event)">
+        <div style="display: block;">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" required/>
+        </div>
+        <div style="display: block;">
+            <label for="pass">Password</label>
+            <input type="text" name="pass" id="pass" required/>
+        </div>
+
+        <button type="submit">Add</button>
+    </form>
+
+    <h3>All Password</h3>
+    <ul></ul>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+<script src="index.js"></script>
+
+</html>
