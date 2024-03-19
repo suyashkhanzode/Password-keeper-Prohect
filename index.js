@@ -104,3 +104,4 @@ function searchPassword(serachText){
    }
 }
 
+window.onload = handleOnLoad();
